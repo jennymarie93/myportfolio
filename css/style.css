@@ -321,6 +321,12 @@ form input[type="submit"] {
     padding: 1em 0;
     background: rgba(255,255,255,.98);
 }
+
+.site-header.transparent {
+    padding: 1em 0;
+    background:  rgba(255,255,255,.9);
+}
+
 .site-header a {
     color:rgba(0, 0, 0, .8);
 }
@@ -620,7 +626,9 @@ font-style: italic; */
 
 .gallery body {
     background: white;
-    font-family: "Aktiv Grotesk", sans-serif;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     padding-right: 2rem;
   }
   
@@ -635,6 +643,7 @@ font-style: italic; */
     overflow: hidden;
     /* max-width: 1400px; */
     margin: auto;
+    z-index: -1;
   }
   .gallery__strip {
     min-height: 100vh;
@@ -690,21 +699,24 @@ font-style: italic; */
   }
   .photo__name {
     text-transform: uppercase;
-    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
     letter-spacing: 2px;
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgb(67, 67, 67);
     margin-top: -25px;
     transition: 0.4s ease-in-out 0.4s;
     position: relative;
     width: 100%;
+    text-shadow: 1px 1px rgb(255, 255, 255);
   }
   .photo:hover .photo__image img {
     transform: translateX(0%);
   }
   .photo:hover .photo__name {
-    color: black;
+    color: rgb(67, 67, 67);
   }
   
   @keyframes move-it {
