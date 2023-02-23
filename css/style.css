@@ -318,9 +318,10 @@ form input[type="submit"] {
 
 /* SITE HEADER */
 .site-header {
-    padding: 1em 0;
-    background: rgba(255,255,255,.98);
+    padding: 1.5em 0;
+    background: rgba(255,255,255,.3);
 }
+
 
 .site-header.transparent {
     padding: 1em 0;
@@ -363,7 +364,7 @@ section {
 
 /* HERO */
 .hero {
-    padding: 6em 4%;
+    padding: 0 4%;
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
 }
@@ -388,6 +389,34 @@ section {
 .hero p {
     max-width: 400px;
 }
+
+.mex-city {
+    margin-top: 0;
+    margin-left: 0;
+    background-image: url("../img/tourism-logo/mex-city-shirt-full.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 60vh;
+}
+
+.book-cover {
+    backface-visibility:hidden;
+    background:url("../img/book-cover/books-2.jpg") no-repeat scroll 0 0 #000;
+    background-size:cover;
+    bottom:0;
+    background-position: center;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    perspective:1000;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-1;
+}
+
 
 /* FOOTER */
 .site-footer {
@@ -735,3 +764,36 @@ font-style: italic; */
       transform: translateY(5%);
     }
   }
+/* 
+  svg.hello {
+    animation: 5s popup;
+  }
+
+  @keyframes popup {
+    0% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    25% {
+        opacity: 25;
+    }
+    50% {
+      transform: translateY(-2.1rem);
+      opacity: 50;
+    }
+    100% {
+      opacity: 100;
+    }
+  } */
+
+.full{
+    background-image: url("../img/tourism-logo/mex-city-shirt-full.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    margin-bottom: 50px;
+  }
+
+
